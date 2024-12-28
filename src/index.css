@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+
+:root {
+  --dark-violet: #2d0c47;
+  --grayish-blue: #9698a6;
+  --very-dark-violet: #1d1b29;
+  --dark-grayish-violet: #6d6875;
+  --very-light-gray: #fafafa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s ease-in;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  font-family: "Karla", sans-serif;
+}
+
+.max-width {
+  @apply max-w-[1200px];
+}
+
+.section_padding {
+  @apply ~px-[1.25rem]/[11.25rem];
+}
+
+.navlink {
+  @apply text-darkViolet font-karla font-semibold text-sm;
+}
