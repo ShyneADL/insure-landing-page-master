@@ -13,15 +13,15 @@ const App = () => {
       <section className="w-full relative">
         <div className="flex lg:flex-row flex-col-reverse relative justify-center ~lg:py-12/20 lg:section_padding w-full lg:overflow-hidden">
           <div className="bg-veryDarkViolet absolute top-0 left-0 h-[550px] w-full z-[1]" />
-          <div className="relative flex flex-col lg:bg-white bg-veryDarkViolet lg:items-start items-center gap-6 z-10 lg:px-0 px-[1.85rem] lg:py-0 py-20 w-full">
+          <div className="relative flex flex-col lg:bg-inherit bg-veryDarkViolet lg:items-start items-center gap-6 z-10 lg:px-0 px-[1.85rem] lg:py-0 py-20 w-full">
             <div className="bg-white w-[120px] h-[1px] lg:block hidden" />
             <img
               src="images/bg-pattern-intro-left-mobile.svg"
-              className="absolute top-0 left-0 z-[1]"
+              className="absolute top-0 left-0 z-[1] lg:hidden block"
             />
             <img
               src="images/bg-pattern-intro-right-mobile.svg"
-              className="absolute -bottom-44 right-0 z-[1]"
+              className="absolute -bottom-44 right-0 z-[1] lg:hidden block"
             />
 
             <h1 className="text-white lg:text-left z-10 text-center font-DM ~text-[2.8rem]/[4.25rem] leading-[64px] lg:mt-12 mt-0 ~w-[19.625rem]/[30.625rem]">
@@ -75,13 +75,13 @@ const App = () => {
           ))}
         </div>
         {/* How we work */}
-        <div className="relative z-10 overflow-hidden bg-veryDarkViolet px-20 py-16 flex items-center justify-between mt-20 w-full">
-          <h3 className="text-white font-DM text-[54px] leading-[58px] w-[480px]">
+        <div className="relative z-10 overflow-hidden bg-veryDarkViolet ~px-10/20 ~py-12/16 flex lg:flex-row flex-col lg:gap-0 gap-8 items-center justify-between mt-20 w-full">
+          <h3 className="text-white font-DM ~text-[2.5rem]/[3.375rem] lg:text-left text-center leading-[58px] lg:w-[480px] w-full">
             Find out more about how we work
           </h3>
           <Button text="How we work" />
           <img
-            src="/images/bg-pattern-how-we-work-desktop.svg"
+            src="/images/bg-pattern-how-we-work-mobile.svg"
             alt="bg"
             className="absolute top-0 right-0 z-[1]"
           />
